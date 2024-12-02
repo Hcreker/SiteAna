@@ -1,0 +1,210 @@
+*{
+    margin:5px;
+    width: auto;
+
+
+}
+body{
+    background-color: rgb(227, 207, 207);
+    background-image: url(img/fundo-de-design-de-padrao-organico-abstrato_1048-19286.avif);
+    background-size: 200px;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+}
+
+h1{
+    text-align: center;
+    text-decoration:wavy;
+    color: rgb(94, 72, 72);
+    text-decoration-line:underline;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    
+   
+}
+
+
+h2{
+    text-decoration:solid;
+    text-decoration-line:underline;
+    text-decoration-color: brown;
+    color: rgb(148, 9, 9);
+}
+
+
+
+img{
+    width: 300px;
+    border-width: 7px;
+    border-radius: 30px;
+    border-style:inset;
+    border-color: rgb(193, 101, 101);
+}
+
+
+nav{
+    background-color: #4f4545;
+    padding: 10px; /*espacamento interno*/
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.553)
+}
+
+
+nav ul{
+    list-style-type: none; /*remove as bolinhas da lista*/
+    margin:0;
+    padding:0;
+    display: flex; /*deixa os intens na horizontal*/
+    justify-content: center; /*centralisa os intens*/
+    
+}
+
+
+nav ul li{
+    position: relative;
+    margin: 0 35px;
+    
+}
+
+
+nav ul li a:hover{
+    color: rgb(255, 165, 165);
+}
+
+
+nav ul li a{
+    color: rgb(255, 253, 253);
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    text-decoration: none;
+}
+
+
+
+hr{
+    padding: 3px;
+    background-color: rgb(255, 163, 163);
+}
+
+
+
+
+.grid-gallery-container {
+    display: grid; /* Ativa o CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Define o grid com colunas flexíveis */
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+/* Cada item da galeria */
+.grid-gallery-item {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 400px; /* Define uma largura fixa para cada item */
+    transition: all .3s;
+}
+
+/* Estilos para as imagens */
+.grid-gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.grid-gallery-container:hover .grid-gallery-item{
+    opacity: .5;
+}
+.grid-gallery-container .grid-gallery-item:hover {
+    opacity: 1
+}
+.grid-gallery-item:hover{
+    transform: translateY(-20px)
+}
+
+.container-login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    
+    
+   
+}
+
+.container-login img {
+    margin-bottom: 20px;
+}
+
+
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
+button {
+    background-color: #432512;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #633309;
+    color: #ff9f9f;
+}
+
+.botao a{
+ font-size: 50px ;
+ background-color: #4f4545;
+ color: #ffffff;
+ display: flex; /*deixa os intens na horizontal*/
+ justify-content: center; /*centralisa os intens*/
+ text-decoration: none;
+}
+
+.botao:hover a{
+    color: #ff9f9f;
+    transition-duration: 0.4s;
+    background-color: #ab7a6d;
+   
+}
+
+.fundo {
+    background-color: #3b2b2b;
+}
+
+header nav ul img{
+    width: 70px;
+    border-radius: 5px;
+    border-width: 2px;
+   
+    
+    
+}
+
+.pagel {
+    background-size: 1000px;
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t1/2375040-fundo-branco-moderno-vetor.jpg);
+}
+
