@@ -10,12 +10,14 @@
 <body>
     <div class="pagel">
    <header>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <hr>
       <nav>
           <ul>
-            <img src="img/DALL·E 2024-11-06 08.33.37 - A sleek and modern logo for an exotic shoe brand. The design features an elegant, stylized shoe with unique curves, representing luxury and exoticism.webp" alt="">
-             <li><a href="sobre.html">Sobre nós</a></li>
-             <li class="dropdown">
+            <li><a href="asvezes.html"></li><img src="img/DALL·E 2024-11-06 08.33.37 - A sleek and modern logo for an exotic shoe brand. The design features an elegant, stylized shoe with unique curves, representing luxury and exoticism.webp" alt="logo" width="5%"></a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li class="dropdown">
              <a href="#sapatos" class="dropdown">Sapatos</a>
              <ul class="dropdown-content">
                 <li><a href="galeria.html">Coleção</a></li>
@@ -24,10 +26,10 @@
              </ul>
              </li>
              <li><a href="Login.html">Login</a></li>
-             
           </ul>
       </nav>
     </header>
+
     <br>
     <h1>Sapatos Exoticos</h1>
     <br>
@@ -37,7 +39,6 @@
     <hr>
     <h2>Um Sapato Social</h2>
     <img src="img/c73c430ec392db1772ac7f0fd3f631c4 (1).jpg" alt="sapatosocial" width="30%">
-   
     <br>
     <h2>Uma Sapatilha</h2>
     <img src="img/carros-estranhos-3-01.jpg" alt="sapatilha">
@@ -99,5 +100,29 @@
                 
         </footer>
     </div>
+
+    <script>
+        // Seleciona o checkbox e o menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('nav ul');
+    
+        // Adiciona um evento para abrir/fechar o menu
+        menuToggle.addEventListener('change', () => {
+            if (menuToggle.checked) {
+                menu.style.display = 'flex'; // Mostra o menu
+            } else {
+                menu.style.display = 'none'; // Oculta o menu
+            }
+        });
+    
+        // Garante que o menu funcione corretamente ao redimensionar a tela
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menu.style.display = 'flex'; // Mostra o menu em telas maiores
+            } else if (!menuToggle.checked) {
+                menu.style.display = 'none'; // Oculta o menu em telas menores
+            }
+        });
+    </script>
 </body>
 </html>
